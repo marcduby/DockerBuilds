@@ -9,7 +9,7 @@ services:
     ports:
       - "8085:5000"
     volumes:
-      - /home/javaprog/Data/Broad/LdServer/data:/home/ldserver/var:Z
+      - /home/javaprog/Data/Broad/LdServer/Topmed:/home/ldserver/var:Z
       - /home/javaprog/Data/Broad/LdServer/config.py:/home/ldserver/rest/instance/config.py
     depends_on:
       - redis
