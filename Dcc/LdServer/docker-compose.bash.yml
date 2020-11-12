@@ -1,0 +1,20 @@
+version: '3'
+services:
+  raremetal:
+    image: statgen/ldserver:0.6.0
+    environment:
+      - FLASK_APP=rest/raremetal
+      - RAREMETAL_CONFIG_DATA=/home/ldserver/var/config.yml
+      - RAREMETAL_WORKERS=4
+    ports:
+      - "8085:5000"
+    volumes:
+      - /home/javaprog/Data/Broad/LdServer/data:/home/ldserver/var:Z
+      - /home/javaprog/Data/Broad/LdServer/config.py:/home/ldserver/rest/instance/config.py
+    depends_on:
+      - redis
+    restart: "on-failure"
+    working_dir: /home/ldserver
+
+  redis:
+    image: "redis:alpine"
