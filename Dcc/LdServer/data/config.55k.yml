@@ -2,14 +2,14 @@ genotypes:
 - id: 1
   name: "55K"
   description: "55K"
-  filepath: "var/52k/55k.clean.chr*.sav"
+  filepath: "var/55k.clean.chr*.sav"
   genome_build: "GRCh37"
 
 phenotypes:
 - id: 1
   name: "55K exomes"
   description: "Phenotypes for 55K exome data"
-  filepath: "var/52k/55kQTsRemoved.2019_0829.from_adj.ped"
+  filepath: "var/55kQTsRemoved.2019_0829.from_adj.ped"
   genotypes: 1
   genome_build: "GRCh37"
   delim: "\t"
@@ -129,16 +129,3 @@ phenotypes:
       column_type: "FLOAT"
       description: "10th principal component of genetic ancestry"
 
-summary_stats:
-- id: 1
-  name: "TOPMed 70K Hispanic"
-  description: "Hispanic Type 2 diabetes"
-  score_path: "var/Topmed/topmed.HS.chr*.score.assoc.gz"
-  cov_path: "var/topmed.HS.chr*.cov.assoc.gz" 
-  genome_build: "GRCh37"
-- id: 2
-  name: "TOPMed 70K Samoan"
-  description: "Samoan Type 2 diabetes"
-  score_path: "var/Topmed/topmed.Samoan.chr*.score.assoc.gz"
-  cov_path: "var/topmed.Samoan.chr*.cov.assoc.gz"
-  genome_build: "GRCh37"
