@@ -20,7 +20,6 @@ phenotypes:
     DBP:
       column_type: "FLOAT"
       description: "Diastolic bloog pressure"
-      for_analysis: false
     SBP:
       column_type: "FLOAT"
       description: "Systolic blood pressure"
@@ -52,16 +51,3 @@ phenotypes:
       column_type: "FLOAT"
       description: "Triglycerides"
 
-summary_stats:
-- id: 1
-  name: "TOPMed 70K Hispanic"
-  description: "Hispanic Type 2 diabetes"
-  score_path: "var/Topmed/topmed.HS.chr*.score.assoc.gz"
-  cov_path: "var/Topmed/topmed.HS.chr*.cov.assoc.gz" 
-  genome_build: "GRCh37"
-- id: 2
-  name: "TOPMed 70K Samoan"
-  description: "Samoan Type 2 diabetes"
-  score_path: "var/Topmed/topmed.Samoan.chr*.score.assoc.gz"
-  cov_path: "var/Topmed/topmed.Samoan.chr*.cov.assoc.gz"
-  genome_build: "GRCh37"
