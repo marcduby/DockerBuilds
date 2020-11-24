@@ -1,0 +1,6 @@
+- id: 5
+  name: "TOPMed New"
+  description: "New Type 2 diabetes"
+  score_path: "var/TopmedAggregated/TOPMed_frz5b_pooled_t2d_MetaScore.hg19.*.txt.gz"
+  cov_path: "var/TopmedAggregated/TOPMed_frz5b_pooled_t2d_MetaCov.hg19.*.txt.gz"
+  genome_build: "GRCh37"
