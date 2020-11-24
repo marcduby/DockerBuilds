@@ -2,130 +2,155 @@ genotypes:
 - id: 1
   name: "55K"
   description: "55K"
-  filepath: "var/55k.clean.chr*.sav"
+  filepath: "var/55k/55k.clean.chr*.sav"
   genome_build: "GRCh37"
 
 phenotypes:
 - id: 1
   name: "55K exomes"
   description: "Phenotypes for 55K exome data"
-  filepath: "var/55kQTsRemoved.2019_0829.from_adj.ped"
+  filepath: "var/55k/55kQTsRemoved.2019_0829.from_adj.ped"
   genotypes: 1
   genome_build: "GRCh37"
   delim: "\t"
   columns:
     t2d:
-      column_type: "FLOAT"
+      column_type: "CATEGORICAL"
       description: "Type 2 Diabetes"
     Age:
       column_type: "FLOAT"
       description: "Age"
-    DBP_ADJ:
-      column_type: "FLOAT"
-      description: "Diastolic blood pressure - adjusted and normalized"
+      for_analysis: false
     DBP:
       column_type: "FLOAT"
-      description: "Diastolic bloog pressure"
-    SBP_ADJ:
+      description: "Diastolic blood pressure - adjusted and normalized"
+    DBP_ori:
       column_type: "FLOAT"
-      description: "Systolic blood pressure - adjusted and normalized"
+      description: "Diastolic bloog pressure"
+      for_analysis: false
     SBP:
       column_type: "FLOAT"
+      description: "Systolic blood pressure - adjusted and normalized"
+    SBP_ori:
+      column_type: "FLOAT"
       description: "Systolic blood pressure"
-    FAST_GLU_ADJ:
+      for_analysis: false
+    FG:
       column_type: "FLOAT"
       description: "Fasting glucose - adjusted and normalized"
-    FAST_GLU:
+    FAST_GLU_ori:
       column_type: "FLOAT"
       description: "Fasting glucose"
-    FAST_INS_ADJ:
+      for_analysis: false
+    FI:
       column_type: "FLOAT"
       description: "Fasting insulin - adjusted and normalized"
-    FAST_INS:
+    FAST_INS_ori:
       column_type: "FLOAT"
       description: "Fasting insulin"
-    HDL_ADJ:
-      column_type: "FLOAT"
-      description: "HDL cholesterol - adjusted and normalized"
+      for_analysis: false
     HDL:
       column_type: "FLOAT"
-      description: "HDL cholesterol"
-    LDL_ADJ:
+      description: "HDL cholesterol - adjusted and normalized"
+    HDL_ori:
       column_type: "FLOAT"
-      description: "LDL cholesterol - adjusted and normalized"
+      description: "HDL cholesterol"
+      for_analysis: false
     LDL:
       column_type: "FLOAT"
-      description: "LDL cholesterol"
-    BMI_ADJ:
+      description: "LDL cholesterol - adjusted and normalized"
+    LDL_ori:
       column_type: "FLOAT"
-      description: "Body mass index - adjusted and normalized"
+      description: "LDL cholesterol"
+      for_analysis: false
     BMI:
       column_type: "FLOAT"
+      description: "Body mass index - adjusted and normalized"
+    BMI_ori:
+      column_type: "FLOAT"
       description: "Body mass index"
+      for_analysis: false
     SERUM_CREATININE_ADJ:
       column_type: "FLOAT"
       description: "Serum creatinine - adjusted and normalized"
+      for_analysis: false
     SERUM_CREATININE:
       column_type: "FLOAT"
       description: "Serum creatinine"
-    HR2_GLU_ADJ:
+      for_analysis: false
+    2hrG:
       column_type: "FLOAT"
       description: "Two-hour glucose post OGTT - adjusted and normalized"
-    HR2_GLU:
+    HR2_GLU_ori:
       column_type: "FLOAT"
       description: "Two-hour glucose post OGTT"
-    HR2_INS_ADJ:
+      for_analysis: false
+    2hrI:
       column_type: "FLOAT"
       description: "Two-hour insulin - adjusted and normalized"
-    HR2_INS:
+    HR2_INS_ori:
       column_type: "FLOAT"
       description: "Two-hour insulin"
-    CHOL_ADJ:
-      column_type: "FLOAT"
-      description: "Cholesterol - adjusted and normalized"
+      for_analysis: false
     CHOL:
       column_type: "FLOAT"
-      description: "Cholesterol"
-    TG_ADJ:
+      description: "Cholesterol - adjusted and normalized"
+    CHOL_ori:
       column_type: "FLOAT"
-      description: "Triglycerides - adjusted and normalized"
+      description: "Cholesterol"
+      for_analysis: false
     TG:
       column_type: "FLOAT"
+      description: "Triglycerides - adjusted and normalized"
+    TG_ori:
+      column_type: "FLOAT"
       description: "Triglycerides"
+      for_analysis: false
     ANCESTRY:
       column_type: "CATEGORICAL"
       description: "Self-reported ancestry"
+      for_analysis: false
     origin:
       column_type: "CATEGORICAL"
+      for_analysis: false
       for_analysis: false
     C1:
       column_type: "FLOAT"
       description: "1st principal component of genetic ancestry"
+      for_analysis: false
     C2:
       column_type: "FLOAT"
       description: "2nd principal component of genetic ancestry"
+      for_analysis: false
     C3:
       column_type: "FLOAT"
       description: "3rd principal component of genetic ancestry"
+      for_analysis: false
     C4:
       column_type: "FLOAT"
       description: "4th principal component of genetic ancestry"
+      for_analysis: false
     C5:
       column_type: "FLOAT"
       description: "5th principal component of genetic ancestry"
+      for_analysis: false
     C6:
       column_type: "FLOAT"
       description: "6th principal component of genetic ancestry"
+      for_analysis: false
     C7:
       column_type: "FLOAT"
       description: "7th principal component of genetic ancestry"
+      for_analysis: false
     C8:
       column_type: "FLOAT"
       description: "8th principal component of genetic ancestry"
+      for_analysis: false
     C9:
       column_type: "FLOAT"
       description: "9th principal component of genetic ancestry"
+      for_analysis: false
     C10:
       column_type: "FLOAT"
       description: "10th principal component of genetic ancestry"
-
+      for_analysis: false
